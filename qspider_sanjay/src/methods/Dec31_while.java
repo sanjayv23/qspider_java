@@ -37,5 +37,19 @@ public class Dec31_while {
 			
 		}
 		System.out.println("sum of digit: "+sum);
+		
+		System.out.println();
+		int spy=123;
+		int add=0,mul=1;
+		while(spy!=0) {
+			int last=spy%10;
+			add+=last;
+			mul*=last;
+			spy=spy/10;
+			
+		}
+		if(add==mul) System.out.println("spy number");
+		else System.out.println("not spy number");
+		System.out.println();
 	}
 }

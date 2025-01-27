@@ -31,11 +31,8 @@ public class Merge_two_array {
 			}
 			else  {
 				c[k++]=b[j];
-				j++;
-				
+				j++;		
 			}
-			
-			
 		}
 		while(i<a.length) {
 			c[k++]=a[i];

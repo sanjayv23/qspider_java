@@ -13,15 +13,9 @@ public class right_shift {
 		
 		int t1=arr[0];
 		for(int i=0;i<arr.length-1;i++) {
-			
-			int t2=arr[i+1];
-			
+			int t2=arr[i+1];	
 			arr[i+1]=t1;
 			t1=t2;
-			
-			//a=arr[i];
-			
-			
 		}
 		arr[0]=temp;
 	}

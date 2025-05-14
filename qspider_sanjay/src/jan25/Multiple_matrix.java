@@ -2,8 +2,8 @@ package jan25;
 import jan22.Input_2d_array;
 public class Multiple_matrix {
 	public static void main(String[] args) {
-		int[][] a= {{1,3,5},{2,4,2},{1,4,5}};
-		int[][] b= {{1,3,5},{2,4,2},{1,4,5}};
+		int[][] a= {{1, 1}, {2, 2}};
+		int[][] b= {{1, 1}, {2, 2}};
 		int[][] c=multiple(a, b);
 		Input_2d_array.print_matrix(c);
 		

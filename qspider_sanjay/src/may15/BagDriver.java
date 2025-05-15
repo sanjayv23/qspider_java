@@ -12,7 +12,10 @@ public class BagDriver {
 		System.out.println(b2);
 		
 		
-		
+		b2.setColor("White");
+		b2.setPrice(5000);
+		System.out.println("Color: "+b2.getColor());
+		System.out.println("price: "+b2.getPrice());
 		
 	}
 }

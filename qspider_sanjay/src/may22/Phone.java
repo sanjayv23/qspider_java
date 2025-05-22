@@ -11,9 +11,7 @@ public class Phone {
 	public External_Memory getExternalMemory() {
 		return externalMemory;
 	}
-	public void setExternalMemory(External_Memory externalMemory) {
-		this.externalMemory = externalMemory;
-	}
+	
 	public String getModel() {
 		return model;
 	}

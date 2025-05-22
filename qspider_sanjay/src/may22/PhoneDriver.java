@@ -6,7 +6,9 @@ public class PhoneDriver {
 		
 		System.out.println(ph.getModel()+" "+ph.getColor()+" "+ph.getPrice());
 		System.out.println(ph.getExternalMemory() +" "+ ph.getExternalMemory().getBrand()+ " " + ph.getExternalMemory().getCapacity() +" "+ ph.getExternalMemory().getPrice()) ;
-		//ph.createSim(249,1234567890);
+		
+		//lazy instantiation 
+		ph.createSim(249,1234567890);
 		System.out.println(ph.getSim().getBalance()+" " +ph.getSim().getPhoneNo());
 		
 	}

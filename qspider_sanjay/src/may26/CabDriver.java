@@ -12,13 +12,9 @@ public class CabDriver {
 		
 		// generalise becoz it can store any of the child class reference
 		Cab cab1;
-		
-//		Car c1;
-//		Bike b1;
-//		Auto a1;
-
-		
-		
+	
+                                                                                                      
+                                                                             
 		switch(n) {
 			case 1:{
 				cab1=new Car();

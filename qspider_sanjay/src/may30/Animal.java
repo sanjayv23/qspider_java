@@ -1,5 +1,8 @@
 package may30;
 
-public class Animal {
-
+public abstract class Animal {
+	int age;
+	String gender;
+	
+	abstract void isMammal();
 }

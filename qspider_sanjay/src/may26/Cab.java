@@ -1,16 +1,13 @@
 package may26;
 
 public class Cab {
-	String driverId;
-	int noOfWheels;
+	private double fare;
 	
-	public Cab() {
-		super();
-	}
-	public Cab(String driverId, int noOfWheels) {
-		super();
-		this.driverId = driverId;
-		this.noOfWheels = noOfWheels;
-	}
+	private Driver driverDetails=new Driver("Ramu","936027148","Driver123");
+	
+	
+	
+	
+	 
 	
 }

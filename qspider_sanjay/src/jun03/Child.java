@@ -31,6 +31,6 @@ public class Child extends Parent {
 		
 		
 		System.out.println(obj);
-		System.out.println("is it pink? ? ? ? ");
+		System.out.println();
 	}
 }

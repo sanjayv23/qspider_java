@@ -12,7 +12,7 @@ public class RecursionSampe {
 		System.out.println();
 		System.out.println(mul(3,2));
 		
-		System.out.println();
+		
 		System.out.println(reverse("sanjay"));
 	
 		System.out.println();

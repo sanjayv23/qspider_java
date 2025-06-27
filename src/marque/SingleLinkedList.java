@@ -186,12 +186,12 @@ public class SingleLinkedList {
 }
 
 
-class Node{
-	int data;
-	Node next;
-	
-	Node(int val){
-		data=val;
-		next=null;
-	}
-}
+//class Node{
+//	int data;
+//	Node next;
+//	
+//	Node(int val){
+//		data=val;
+//		next=null;
+//	}
+//}

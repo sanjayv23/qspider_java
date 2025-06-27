@@ -142,7 +142,7 @@ public class CircularSinglyLinkedList {
 		obj.append(15);
 		obj.printLinkedList();
 		obj.deleteAtTail();
-		Systemobj.getValueAtKthNode(1);
+		obj.getValueAtKthNode(1);
 		obj.printLinkedList();
 		
 	}

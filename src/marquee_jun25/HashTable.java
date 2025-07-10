@@ -1,16 +1,25 @@
 package marquee_jun25;
 
-import marquee_jun25.CircularDoublyLinkedList.Node;
+//import marquee_jun25.CircularDoublyLinkedList.Node;
 
 public class HashTable {
-	
+	class Node {
+	    int data;
+	    Node next;
+
+	    Node(int data) {
+	        this.data = data;
+	    }
+	}
 	Node[] arr=new Node[10];
 	int size;
 	
+	// completed
 	public int hashFunction(int key) {
 		return key%arr.length;
 	}
 	
+	// completed
 	public boolean contains(int key) {
 		Node temp = arr[hashFunction(key)];
 	    while (temp != null) {
@@ -20,8 +29,12 @@ public class HashTable {
 		return false;
 	}
 	
+	// completed
 	public boolean insert(int key) {
 		Node newnode=new Node(key);
+		
+		// not allowing the duplicate  element
+		//if(contains(key)) return false;
 		if(arr[hashFunction(key)]!=null) {
 			Node temp=arr[hashFunction(key)];
 			while(temp.next!=null) {
@@ -36,29 +49,37 @@ public class HashTable {
 		return true;
 	}
 	
+	// completed
 	public void display() {
 		if(size==0) System.out.println("Empty hashtable");
+		
 		for(Node n:arr) {
 			if(n!=null) {
-				System.out.print(n.data+" ");
-				n=n.next;
-				while(n!=null) {
-					System.out.print("--->"+n.data);
-					n=n.next;
+				System.out.print("[" + n.data);
+				n = n.next;
+				while (n != null) {
+				    System.out.print(" -> " + n.data);
+				    n = n.next;
 				}
-				System.out.print("  ");
+				System.out.print("] ");
 			}
+			
 		}
 		System.out.println();
 	}
 	
 	public static void main(String[] args) {
+		// for another example
+		Object[] arr= {10,true,"Sanjay",'c',5.2};
+		System.out.println((String)arr[2]);
+		
+		
 		HashTable ht = new HashTable();
 
 	    // Insert keys with no collision
 	    System.out.println("Inserting keys without collision:");
 	    ht.insert(1);
-	    ht.insert(5);
+	    ht.insert(2);
 	    ht.insert(3);
 	    ht.insert(4);
 	    ht.display();  // Expect: 1 2 3 4 (in some order based on hash)
